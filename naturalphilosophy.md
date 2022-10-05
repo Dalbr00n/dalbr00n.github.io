@@ -1,1 +1,0 @@
-# Natural Philosophy Midterm Study Guide

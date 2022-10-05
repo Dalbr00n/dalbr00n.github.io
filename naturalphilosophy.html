@@ -25,10 +25,18 @@
     <button onclick="display('principle')">Definition</button>
 
     <script>
+      var t_state_principle = 0;
       function display(term){
         if(term == 'principle'){
           var c = document.getElementById('principle');
-          c.innerHTML = "that from which a thing proceeds in any way";
+          if(t_state_principle == 0){
+            c.innerHTML = "that from which a thing proceeds in any way";
+            t_state_principle = 1;
+          } 
+          else {
+            c.innerHTML = '';
+            t_state_principle = 0;
+          }
         }
       }
     </script>
